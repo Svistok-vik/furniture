@@ -1,0 +1,94 @@
+.info-dot {
+    position: relative;
+    cursor: pointer;
+    &:focus {
+        transform: scale(1.3);
+        transition: all 0.5s ease-in;
+    }
+
+    &__circle {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+
+    }
+
+    &__radius {
+        width: 32px;
+        height: 32px;
+
+        border: 0.86px solid #fff;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+
+    }
+    
+}
+
+
+.info-hint {
+    position: absolute;
+    left: 0;
+    top: -26px;
+    width: 112px;
+    height: 56px;
+    transform: translate(-36%, -100%);
+    background-image: url(/img/header/Union.svg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px 19px 12px;
+    
+
+
+    &__radio {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+
+
+    }
+
+    &__radio-fake {
+        width: 24px;
+        height: 24px;
+        border:  2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+
+        &--orange {
+            background-color: var(--ui-orange);
+        }
+
+        &--biruza {
+            background-color: var(--ui-biruza);
+        }
+
+        &--gray {
+            background-color: var(--ui-gray);
+        }
+    }
+
+
+    &__radio:checked + &__radio-fake {
+        background-image: url(/img/header/Group.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+
+}

@@ -1,0 +1,62 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 344px;
+    border-radius: 42px;
+    border: 1px solid white ;
+    background: rgba(255, 255, 255, 0.15);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    gap: 20px;
+    @include phones {
+        width: 275px;
+    }
+    
+
+
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     right: 8px;
+    //     top: 7px;
+    //     width: 40px;
+    //     height: 40px;
+    //     background-image: url(/img/header/search.svg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-color: var(--ui-orange);
+    //     border-radius: 50px;
+    //     cursor: pointer;
+    // }
+
+
+    &__input {
+        padding-left: 20px;
+        height: 55px;
+        border-radius: 42px;
+        flex-grow: 1;
+
+        
+        
+
+        &::placeholder {
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background-color: var(--ui-orange);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+}

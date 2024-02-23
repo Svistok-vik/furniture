@@ -1,0 +1,71 @@
+.product {
+    background: #F7F7F7;
+    max-width: 1440px;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+
+
+    &__title {
+        text-align: center;
+        margin-bottom: 32px;
+
+        @include phones {
+            font-size: 32px;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        height: 57px;
+        width: 348px;
+        background: #EEEE;
+        border-radius: 44px;
+        margin: 0 auto;
+        padding: 6px;
+        margin-bottom: 80px;
+        @include phones {
+            width: 313px;
+        }
+
+    }
+
+    &__tabs-btn {
+        color: var(--textColor);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 185%;
+        
+        border-radius:32px;
+        width: 84px;
+        height: 45px;
+        text-align: center;
+
+        &--active {
+            background:  var(--ui-orange);
+        }
+
+
+        // &:hover {
+        //     background:  var(--ui-orange);
+        //     cursor: pointer;
+        //     transition: 0.5s;
+
+        // }
+    }
+
+    
+
+    
+
+    &__link {
+        display: block;
+        text-align: center;
+        padding-right: 13px;
+
+        
+    }
+
+    
+}

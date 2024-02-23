@@ -1,0 +1,86 @@
+.benefit {
+    padding: 120px 0;
+
+    @include laptop {
+        padding: 80px 0;
+    }
+
+    @include tablets {
+        padding: 60px 0;
+    }
+
+    @include phones {
+        padding: 40px 0;
+    }
+
+
+    &__row {
+        display: flex;
+        align-items: center;
+        color: var(--textColor);
+        gap: 0 41px;
+
+        @include desktop {
+            flex-direction: column;
+            
+        }
+
+    }
+
+    &__title {
+        margin-right: 42px;
+        max-width:  242px;
+
+        @include desktop {
+            margin: 0 auto;
+            margin-bottom: 35px;
+            max-width: none;
+           
+        }
+
+        @include phones {
+            font-size: 32px;
+        }
+
+    }
+
+    &__advantages {
+
+        max-width: 248px;
+
+        @include desktop {
+            
+            max-width: 480px;
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+
+        
+
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 185%;
+            margin-bottom: 14px;
+            opacity: 0.8;
+        }
+
+        &-link {
+            
+            padding-right: 42px;
+
+           
+        }
+
+        
+    }
+}
+
