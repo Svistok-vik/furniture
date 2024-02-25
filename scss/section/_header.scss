@@ -1,7 +1,7 @@
 .header {
     position: relative;
     padding-top: 40px;
-    background-image: url(/img/header/header-bg.jpg);
+    background-image: url(../img/header/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     max-width: 1440px;
     margin: 0 auto;
 
-    @include retina-bg(url(/img/header/header-bg@2x.jpg));
+    @include retina-bg(url(../img/header/header-bg@2x.jpg));
 
 
 

@@ -1,4 +1,4 @@
-@import url(/fonts/stylesheet.css);
+@import url(../fonts/stylesheet.css);
 body {
   font-family: var(--font-main);
   color: var(--header-text-color);
@@ -157,7 +157,7 @@ legend {
 .header {
   position: relative;
   padding-top: 40px;
-  background-image: url(/img/header/header-bg.jpg);
+  background-image: url(../img/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -167,7 +167,7 @@ legend {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
-    background-image: url(url(/img/header/header-bg@2x.jpg));
+    background-image: url(url(../img/header/header-bg@2x.jpg));
   }
 }
 .header__top {
