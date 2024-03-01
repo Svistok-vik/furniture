@@ -41,7 +41,7 @@
     width: 112px;
     height: 56px;
     transform: translate(-36%, -100%);
-    background-image: url(/img/header/Union.svg);
+    background-image: url(../img/header/Union.svg);
 
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
 
 
     &__radio:checked + &__radio-fake {
-        background-image: url(/img/header/Group.svg);
+        background-image: url(../img/header/Group.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
